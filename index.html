@@ -1,0 +1,54 @@
+>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GITHUB API </title>
+  </head>
+
+  <body>
+    <h1 class="title1"> Repositorios em GITHUB</h1>
+    <div id="cont"></div>
+
+   
+    <div class="formulario">
+      <div class="contenedor-small">
+        <h1>Contato</h1>
+      </div>
+      <form name="Formulario" method="post" onsubmit="return validateForm()">
+        <label>Nome: </label
+        ><input
+          type="text"
+          name="form-name"
+          placeholder="digite aqui seu nome"
+          required
+        />
+        <label>E-mail: </label
+        ><input
+          type="email"
+          name="form-email"
+          placeholder="digite aqui o seu e-mail"
+          required
+        />
+        <label>Assunto: </label
+        ><input
+          type="text"
+          name="form-asunto"
+          placeholder="digite aqui o assunto do email"
+        />
+        <label>Texto: </label
+        ><textarea
+          name="area_texto"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="digite aqui o problema!"
+        ></textarea>
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
