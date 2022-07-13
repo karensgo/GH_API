@@ -1,4 +1,4 @@
-var contenido = document.querySelector("#cont");
+var contenido = document.querySelector("#api");
 fetch("https://api.github.com/users/karensgo/repos")
   .then(function (response) {
     return response.json();
@@ -17,8 +17,7 @@ fetch("https://api.github.com/users/karensgo/repos")
 
 function validateForm() {
   var x =
-    document.forms["mi_formulario"][("form-name", "form-email", "form-asunto")]
-      .value;
+    document.forms["formulario"][("form-name", "form-email", "form-asunto")].value;
   if (x == "") {
     alert("voce debe pre-encher todos os campos!!!!");
     console.log(x);
